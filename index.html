@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toggle-container">
+            <span class="toggle-label">забавный вид</span>
+            <label class="toggle">
+                <input type="checkbox" id="viewToggle">
+                <span class="slider"></span>
+            </label>
+            <span class="toggle-label">обычный вид</span>
+        </div>
+        
+        <div class="header">
+            <div class="hearts">💖 💕 💖</div>
+            <h1>ты понравилась трем братьям,<br>на ком ты отсканировала qr код?</h1>
+            <div class="hearts">💕 💖 💕</div>
+        </div>
+        
+        <div class="counter">
+            <span>выборы: <span id="totalVotes">0</span></span>
+        </div>
+        
+        <div class="brothers">
+            <div class="brother" data-name="vanya">
+                <div class="image-container">
+                    <img src="res/vanya.jpg" alt="Ваня">
+                    <div class="votes">0</div>
+                </div>
+                <h3>Ваня</h3>
+                <div class="info">rr, выгляжу как самый отвратительный король, ты уже знаешь этот текст, текст написал дмитрий уткин, wex on the beat</div>
+            </div>
+            
+            <div class="brother" data-name="kirill">
+                <div class="image-container">
+                    <img src="res/kirill.jpg" alt="Кирилл">
+                    <div class="votes">0</div>
+                </div>
+                <h3>Кирилл</h3>
+                <div class="info">Ало это хурикейн, кобылу заказывали?</div>
+            </div>
+            
+            <div class="brother" data-name="artem">
+                <div class="image-container">
+                    <img src="res/artem.jpg" alt="Артем">
+                    <div class="votes">0</div>
+                </div>
+                <h3>Артем</h3>
+                <div class="info">Ну вот смотри, Артём, она — десять из десяти, но она маленький…
+                    ТЁМНЫЙ ПРИНЦ</div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="script.js"></script>
+</body>
+</html>
